@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.header .logo{
+    font-size: 1.7em;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+
+.nav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background:#fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .5s;
+}
+.nav a:hover::after{
+    transform: scaleX(1);
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(image/HD-wallpaper-coffee-by-window-street-coffee-window-cup-ai-art.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 80px 100px 0;
+}
+
+.home .content{
+    
+    color: #fff;
+    
+    margin-top: -88px;
+}
+
+.content{
+    font-size: 18px;
+    letter-spacing: .03em;
+}
+
+.content p{
+    margin: 10px 0 40px;
+}
+.content a{
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    font-weight: 500;
+    padding: 10px 40px;
+    border-radius: 40px;
+    
+}
+
+.home .wrapper-login{
+    position: relative;
+    width: 440px;
+}
+
+.wrapper-login h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.wrapper-login .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 40px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 40px;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+}
+
+.input-box .icon{
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    font-size: 15px;
+    color: #fff;
+}
+.wrapper-login{
+
+   margin-left: 140px;
+}
+
+.wrapper-login .remember-forgot{
+    font-size: .9em;
+    color: #fff;
+    margin: -25px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.remember-forget a{
+    color: gray;
+}
+.remember-forget{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+    .btn{
+        margin-left: 130px;
+         width: 40%;
+         padding: 10px 8px;
+         font-size: 13px;
+         background: transparent;
+         color: white;
+         border-radius: 15px;
+     }
+     .register-link{
+        color: white;
+        margin-top: 15px;
+        margin-left: 130px;
+    
+    }
+
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        padding: 10px 10px;
+    }
+    
+    .header .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header nav a{
+        font-size: 15px;
+    }
+
+    .home{
+        flex-direction: column;
+    height: 130vh;
+    }
+
+    .wrapper-login{
+        margin-top: 40px;
+    }
+    
+    .remember-forget{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 15px;
+    }
+    .remember-forget a{
+        color: white;
+        
+    }
+
+    .btn{
+       margin-left: 130px;
+        width: 40%;
+        padding: 10px 8px;
+        font-size: 13px;
+        background: transparent;
+        color: white;
+        border-radius: 15px;
+    }
+
+    .register-link{
+        color: white;
+        margin-top: 15px;
+        margin-left: 130px;
+    
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+    .header{
+        padding: 10px 10px;
+    }
+
+    .header .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header nav a{
+        font-size: 15px;
+    }
+
+    .home{
+        flex-direction: column;
+        height: 130vh;
+         
+    }
+    .home .content{
+        padding-top: 30px; 
+        padding-left: 58px;
+    }
+
+    .wrapper-login{
+        margin-top: 40px;
+    }
+    
+    .remember-forget{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 15px;
+    }
+    .remember-forget a{
+        color: white;
+        
+    }
+
+    .btn{
+       margin-left: 130px;
+        width: 40%;
+        padding: 10px 8px;
+        font-size: 13px;
+        background: transparent;
+        color: white;
+        border-radius: 15px;
+    }
+
+    .register-link{
+        color: white;
+        margin-top: 15px;
+        margin-left: 130px;
+    
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px){
+
+    .header{
+        padding: 10px 10px;
+    }
+
+    .header .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header nav a{
+        font-size: 15px;
+    }
+
+    .home{
+        flex-direction: column;
+        height: 130vh;
+         
+    }
+    .home .content{
+        padding-top: 30px; 
+        padding-left: 122px;
+        font-size: 21px;
+    }
+
+    .wrapper-login{
+        margin-top: 40px;
+        font-size: 14px;
+        
+    }
+    
+    .remember-forget{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 15px;
+    }
+    .remember-forget a{
+        color: white;
+        
+    }
+
+    .btn{
+       margin-left: 130px;
+        width: 40%;
+        padding: 10px 8px;
+        font-size: 13px;
+        background: transparent;
+        color: white;
+        border-radius: 15px;
+    }
+
+    .register-link{
+        color: white;
+        margin-top: 15px;
+        margin-left: 130px;
+    
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px){
+
+    
+}
